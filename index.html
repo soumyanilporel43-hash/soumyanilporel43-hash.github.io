@@ -1,25 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>For You ❤️</title>
+  <meta charset="UTF-8">
+  <title>My Love Letter ❤️</title>
   <style>
-    body { background: #fff0f5; font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #ff3366; font-size: 50px; }
-    p { font-size: 22px; color: #444; }
-    .heart { font-size: 100px; color: red; animation: beat 1s infinite; }
-    @keyframes beat {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.3); }
-      100% { transform: scale(1); }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: #fce4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #4a2c2a;
+    }
+
+    .letter {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      width: 70%;
+      max-width: 700px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      position: relative;
+      text-align: center;
+    }
+
+    .letter h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 50px;
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+
+    .letter p {
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+      font-style: italic;
+      font-size: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 18px;
+      color: white;
+      background: #d81b60;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #ad1457;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      font-size: 30px;
+      color: #e91e63;
+      animation: floatUp 6s infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      30% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <h1>I'm Sorry ❤️</h1>
-  <p>You are very special to me. I don’t want to fight anymore 💕</p>
-  <div class="heart">💕</div>
-  <p>I love you so much ♥ </p>
-  <div class="heart">😍 </div>
-  
+  <div class="letter">
+    <h1>My Love ❤️</h1>
+    <p>
+      From the moment you walked into my life, everything changed.  
+      My days are brighter, my nights are warmer, and my heart feels fuller.  
+      You are not just a part of my story—you are my favorite chapter.  
+      <br><br>
+      Whenever I think of you, I smile without even realizing it.  
+      You are my safe place, my happiness, and my forever dream.  
+      <br><br>
+      Let this little letter remind you—  
+      you are my everything 💕
+    </p>
+    <div class="signature">
+      Forever yours,<br>
+      <b>NIL 💋 </b>
+    </div>
+
+    <!-- Button to go to second page -->
+    <a href="cute.html" class="btn">Click Me 💖</a>
+
+    <!-- Music -->
+    <audio autoplay loop>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Floating hearts -->
+  <div class="heart" style="left:10%;">❤️</div>
+  <div class="heart" style="left:30%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:50%; animation-delay:4s;">💕</div>
+  <div class="heart" style="left:70%; animation-delay:6s;">💓</div>
+  <div class="heart" style="left:90%; animation-delay:8s;">💞</div>
 </body>
+</html>
+
 </html>
